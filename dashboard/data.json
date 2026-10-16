@@ -1,0 +1,1369 @@
+{
+  "meta": {
+    "generated_at": "2026-10-16T09:07:07.679240",
+    "series": "India Monthly UPI Transactions (Millions)",
+    "source": "NPCI \u2013 npci.org.in",
+    "train_end": "2024-09-01",
+    "test_start": "2024-10-01",
+    "test_end": "2025-09-01",
+    "alpha": 0.1,
+    "coverage_target": "90%"
+  },
+  "historical": [
+    {
+      "date": "2017-01-01",
+      "transactions_mn": 19.76
+    },
+    {
+      "date": "2017-02-01",
+      "transactions_mn": 17.55
+    },
+    {
+      "date": "2017-03-01",
+      "transactions_mn": 19.03
+    },
+    {
+      "date": "2017-04-01",
+      "transactions_mn": 14.65
+    },
+    {
+      "date": "2017-05-01",
+      "transactions_mn": 15.54
+    },
+    {
+      "date": "2017-06-01",
+      "transactions_mn": 19.6
+    },
+    {
+      "date": "2017-07-01",
+      "transactions_mn": 25.61
+    },
+    {
+      "date": "2017-08-01",
+      "transactions_mn": 30.91
+    },
+    {
+      "date": "2017-09-01",
+      "transactions_mn": 30.68
+    },
+    {
+      "date": "2017-10-01",
+      "transactions_mn": 34.75
+    },
+    {
+      "date": "2017-11-01",
+      "transactions_mn": 44.53
+    },
+    {
+      "date": "2017-12-01",
+      "transactions_mn": 145.47
+    },
+    {
+      "date": "2018-01-01",
+      "transactions_mn": 151.7
+    },
+    {
+      "date": "2018-02-01",
+      "transactions_mn": 171.47
+    },
+    {
+      "date": "2018-03-01",
+      "transactions_mn": 178.05
+    },
+    {
+      "date": "2018-04-01",
+      "transactions_mn": 190.08
+    },
+    {
+      "date": "2018-05-01",
+      "transactions_mn": 231.97
+    },
+    {
+      "date": "2018-06-01",
+      "transactions_mn": 246.42
+    },
+    {
+      "date": "2018-07-01",
+      "transactions_mn": 235.65
+    },
+    {
+      "date": "2018-08-01",
+      "transactions_mn": 312.46
+    },
+    {
+      "date": "2018-09-01",
+      "transactions_mn": 315.39
+    },
+    {
+      "date": "2018-10-01",
+      "transactions_mn": 389.49
+    },
+    {
+      "date": "2018-11-01",
+      "transactions_mn": 423.0
+    },
+    {
+      "date": "2018-12-01",
+      "transactions_mn": 469.0
+    },
+    {
+      "date": "2019-01-01",
+      "transactions_mn": 482.0
+    },
+    {
+      "date": "2019-02-01",
+      "transactions_mn": 488.0
+    },
+    {
+      "date": "2019-03-01",
+      "transactions_mn": 533.0
+    },
+    {
+      "date": "2019-04-01",
+      "transactions_mn": 548.0
+    },
+    {
+      "date": "2019-05-01",
+      "transactions_mn": 591.0
+    },
+    {
+      "date": "2019-06-01",
+      "transactions_mn": 604.0
+    },
+    {
+      "date": "2019-07-01",
+      "transactions_mn": 680.0
+    },
+    {
+      "date": "2019-08-01",
+      "transactions_mn": 728.0
+    },
+    {
+      "date": "2019-09-01",
+      "transactions_mn": 844.0
+    },
+    {
+      "date": "2019-10-01",
+      "transactions_mn": 958.0
+    },
+    {
+      "date": "2019-11-01",
+      "transactions_mn": 1001.0
+    },
+    {
+      "date": "2019-12-01",
+      "transactions_mn": 1098.0
+    },
+    {
+      "date": "2020-01-01",
+      "transactions_mn": 1307.0
+    },
+    {
+      "date": "2020-02-01",
+      "transactions_mn": 1330.0
+    },
+    {
+      "date": "2020-03-01",
+      "transactions_mn": 1246.0
+    },
+    {
+      "date": "2020-04-01",
+      "transactions_mn": 999.57
+    },
+    {
+      "date": "2020-05-01",
+      "transactions_mn": 1233.82
+    },
+    {
+      "date": "2020-06-01",
+      "transactions_mn": 1340.86
+    },
+    {
+      "date": "2020-07-01",
+      "transactions_mn": 1492.03
+    },
+    {
+      "date": "2020-08-01",
+      "transactions_mn": 1615.19
+    },
+    {
+      "date": "2020-09-01",
+      "transactions_mn": 1801.18
+    },
+    {
+      "date": "2020-10-01",
+      "transactions_mn": 2071.98
+    },
+    {
+      "date": "2020-11-01",
+      "transactions_mn": 2213.25
+    },
+    {
+      "date": "2020-12-01",
+      "transactions_mn": 2233.0
+    },
+    {
+      "date": "2021-01-01",
+      "transactions_mn": 2302.95
+    },
+    {
+      "date": "2021-02-01",
+      "transactions_mn": 2294.95
+    },
+    {
+      "date": "2021-03-01",
+      "transactions_mn": 2732.85
+    },
+    {
+      "date": "2021-04-01",
+      "transactions_mn": 2645.47
+    },
+    {
+      "date": "2021-05-01",
+      "transactions_mn": 2579.47
+    },
+    {
+      "date": "2021-06-01",
+      "transactions_mn": 2802.91
+    },
+    {
+      "date": "2021-07-01",
+      "transactions_mn": 3245.56
+    },
+    {
+      "date": "2021-08-01",
+      "transactions_mn": 3559.98
+    },
+    {
+      "date": "2021-09-01",
+      "transactions_mn": 3647.9
+    },
+    {
+      "date": "2021-10-01",
+      "transactions_mn": 4211.54
+    },
+    {
+      "date": "2021-11-01",
+      "transactions_mn": 4231.45
+    },
+    {
+      "date": "2021-12-01",
+      "transactions_mn": 4560.0
+    },
+    {
+      "date": "2022-01-01",
+      "transactions_mn": 4625.0
+    },
+    {
+      "date": "2022-02-01",
+      "transactions_mn": 4523.0
+    },
+    {
+      "date": "2022-03-01",
+      "transactions_mn": 5358.0
+    },
+    {
+      "date": "2022-04-01",
+      "transactions_mn": 5583.0
+    },
+    {
+      "date": "2022-05-01",
+      "transactions_mn": 5948.0
+    },
+    {
+      "date": "2022-06-01",
+      "transactions_mn": 5860.0
+    },
+    {
+      "date": "2022-07-01",
+      "transactions_mn": 6283.0
+    },
+    {
+      "date": "2022-08-01",
+      "transactions_mn": 6579.0
+    },
+    {
+      "date": "2022-09-01",
+      "transactions_mn": 6783.0
+    },
+    {
+      "date": "2022-10-01",
+      "transactions_mn": 7305.0
+    },
+    {
+      "date": "2022-11-01",
+      "transactions_mn": 7313.0
+    },
+    {
+      "date": "2022-12-01",
+      "transactions_mn": 7826.0
+    },
+    {
+      "date": "2023-01-01",
+      "transactions_mn": 8036.0
+    },
+    {
+      "date": "2023-02-01",
+      "transactions_mn": 7514.0
+    },
+    {
+      "date": "2023-03-01",
+      "transactions_mn": 8689.0
+    },
+    {
+      "date": "2023-04-01",
+      "transactions_mn": 8895.0
+    },
+    {
+      "date": "2023-05-01",
+      "transactions_mn": 9414.0
+    },
+    {
+      "date": "2023-06-01",
+      "transactions_mn": 9336.0
+    },
+    {
+      "date": "2023-07-01",
+      "transactions_mn": 9963.0
+    },
+    {
+      "date": "2023-08-01",
+      "transactions_mn": 10580.0
+    },
+    {
+      "date": "2023-09-01",
+      "transactions_mn": 10558.0
+    },
+    {
+      "date": "2023-10-01",
+      "transactions_mn": 11406.0
+    },
+    {
+      "date": "2023-11-01",
+      "transactions_mn": 11235.0
+    },
+    {
+      "date": "2023-12-01",
+      "transactions_mn": 12020.0
+    },
+    {
+      "date": "2024-01-01",
+      "transactions_mn": 12189.0
+    },
+    {
+      "date": "2024-02-01",
+      "transactions_mn": 12009.0
+    },
+    {
+      "date": "2024-03-01",
+      "transactions_mn": 13437.0
+    },
+    {
+      "date": "2024-04-01",
+      "transactions_mn": 13304.0
+    },
+    {
+      "date": "2024-05-01",
+      "transactions_mn": 14035.0
+    },
+    {
+      "date": "2024-06-01",
+      "transactions_mn": 13887.0
+    },
+    {
+      "date": "2024-07-01",
+      "transactions_mn": 14439.0
+    },
+    {
+      "date": "2024-08-01",
+      "transactions_mn": 14966.0
+    },
+    {
+      "date": "2024-09-01",
+      "transactions_mn": 15040.0
+    },
+    {
+      "date": "2024-10-01",
+      "transactions_mn": 16580.0
+    },
+    {
+      "date": "2024-11-01",
+      "transactions_mn": 15481.0
+    },
+    {
+      "date": "2024-12-01",
+      "transactions_mn": 16734.0
+    },
+    {
+      "date": "2025-01-01",
+      "transactions_mn": 16990.0
+    },
+    {
+      "date": "2025-02-01",
+      "transactions_mn": 16119.0
+    },
+    {
+      "date": "2025-03-01",
+      "transactions_mn": 18018.0
+    },
+    {
+      "date": "2025-04-01",
+      "transactions_mn": 17870.0
+    },
+    {
+      "date": "2025-05-01",
+      "transactions_mn": 18916.0
+    },
+    {
+      "date": "2025-06-01",
+      "transactions_mn": 18839.0
+    },
+    {
+      "date": "2025-07-01",
+      "transactions_mn": 19520.0
+    },
+    {
+      "date": "2025-08-01",
+      "transactions_mn": 19970.0
+    },
+    {
+      "date": "2025-09-01",
+      "transactions_mn": 20127.0
+    }
+  ],
+  "train_series": [
+    {
+      "date": "2017-01-01",
+      "transactions_mn": 19.76
+    },
+    {
+      "date": "2017-02-01",
+      "transactions_mn": 17.55
+    },
+    {
+      "date": "2017-03-01",
+      "transactions_mn": 19.03
+    },
+    {
+      "date": "2017-04-01",
+      "transactions_mn": 14.65
+    },
+    {
+      "date": "2017-05-01",
+      "transactions_mn": 15.54
+    },
+    {
+      "date": "2017-06-01",
+      "transactions_mn": 19.6
+    },
+    {
+      "date": "2017-07-01",
+      "transactions_mn": 25.61
+    },
+    {
+      "date": "2017-08-01",
+      "transactions_mn": 30.91
+    },
+    {
+      "date": "2017-09-01",
+      "transactions_mn": 30.68
+    },
+    {
+      "date": "2017-10-01",
+      "transactions_mn": 34.75
+    },
+    {
+      "date": "2017-11-01",
+      "transactions_mn": 44.53
+    },
+    {
+      "date": "2017-12-01",
+      "transactions_mn": 145.47
+    },
+    {
+      "date": "2018-01-01",
+      "transactions_mn": 151.7
+    },
+    {
+      "date": "2018-02-01",
+      "transactions_mn": 171.47
+    },
+    {
+      "date": "2018-03-01",
+      "transactions_mn": 178.05
+    },
+    {
+      "date": "2018-04-01",
+      "transactions_mn": 190.08
+    },
+    {
+      "date": "2018-05-01",
+      "transactions_mn": 231.97
+    },
+    {
+      "date": "2018-06-01",
+      "transactions_mn": 246.42
+    },
+    {
+      "date": "2018-07-01",
+      "transactions_mn": 235.65
+    },
+    {
+      "date": "2018-08-01",
+      "transactions_mn": 312.46
+    },
+    {
+      "date": "2018-09-01",
+      "transactions_mn": 315.39
+    },
+    {
+      "date": "2018-10-01",
+      "transactions_mn": 389.49
+    },
+    {
+      "date": "2018-11-01",
+      "transactions_mn": 423.0
+    },
+    {
+      "date": "2018-12-01",
+      "transactions_mn": 469.0
+    },
+    {
+      "date": "2019-01-01",
+      "transactions_mn": 482.0
+    },
+    {
+      "date": "2019-02-01",
+      "transactions_mn": 488.0
+    },
+    {
+      "date": "2019-03-01",
+      "transactions_mn": 533.0
+    },
+    {
+      "date": "2019-04-01",
+      "transactions_mn": 548.0
+    },
+    {
+      "date": "2019-05-01",
+      "transactions_mn": 591.0
+    },
+    {
+      "date": "2019-06-01",
+      "transactions_mn": 604.0
+    },
+    {
+      "date": "2019-07-01",
+      "transactions_mn": 680.0
+    },
+    {
+      "date": "2019-08-01",
+      "transactions_mn": 728.0
+    },
+    {
+      "date": "2019-09-01",
+      "transactions_mn": 844.0
+    },
+    {
+      "date": "2019-10-01",
+      "transactions_mn": 958.0
+    },
+    {
+      "date": "2019-11-01",
+      "transactions_mn": 1001.0
+    },
+    {
+      "date": "2019-12-01",
+      "transactions_mn": 1098.0
+    },
+    {
+      "date": "2020-01-01",
+      "transactions_mn": 1307.0
+    },
+    {
+      "date": "2020-02-01",
+      "transactions_mn": 1330.0
+    },
+    {
+      "date": "2020-03-01",
+      "transactions_mn": 1246.0
+    },
+    {
+      "date": "2020-04-01",
+      "transactions_mn": 999.57
+    },
+    {
+      "date": "2020-05-01",
+      "transactions_mn": 1233.82
+    },
+    {
+      "date": "2020-06-01",
+      "transactions_mn": 1340.86
+    },
+    {
+      "date": "2020-07-01",
+      "transactions_mn": 1492.03
+    },
+    {
+      "date": "2020-08-01",
+      "transactions_mn": 1615.19
+    },
+    {
+      "date": "2020-09-01",
+      "transactions_mn": 1801.18
+    },
+    {
+      "date": "2020-10-01",
+      "transactions_mn": 2071.98
+    },
+    {
+      "date": "2020-11-01",
+      "transactions_mn": 2213.25
+    },
+    {
+      "date": "2020-12-01",
+      "transactions_mn": 2233.0
+    },
+    {
+      "date": "2021-01-01",
+      "transactions_mn": 2302.95
+    },
+    {
+      "date": "2021-02-01",
+      "transactions_mn": 2294.95
+    },
+    {
+      "date": "2021-03-01",
+      "transactions_mn": 2732.85
+    },
+    {
+      "date": "2021-04-01",
+      "transactions_mn": 2645.47
+    },
+    {
+      "date": "2021-05-01",
+      "transactions_mn": 2579.47
+    },
+    {
+      "date": "2021-06-01",
+      "transactions_mn": 2802.91
+    },
+    {
+      "date": "2021-07-01",
+      "transactions_mn": 3245.56
+    },
+    {
+      "date": "2021-08-01",
+      "transactions_mn": 3559.98
+    },
+    {
+      "date": "2021-09-01",
+      "transactions_mn": 3647.9
+    },
+    {
+      "date": "2021-10-01",
+      "transactions_mn": 4211.54
+    },
+    {
+      "date": "2021-11-01",
+      "transactions_mn": 4231.45
+    },
+    {
+      "date": "2021-12-01",
+      "transactions_mn": 4560.0
+    },
+    {
+      "date": "2022-01-01",
+      "transactions_mn": 4625.0
+    },
+    {
+      "date": "2022-02-01",
+      "transactions_mn": 4523.0
+    },
+    {
+      "date": "2022-03-01",
+      "transactions_mn": 5358.0
+    },
+    {
+      "date": "2022-04-01",
+      "transactions_mn": 5583.0
+    },
+    {
+      "date": "2022-05-01",
+      "transactions_mn": 5948.0
+    },
+    {
+      "date": "2022-06-01",
+      "transactions_mn": 5860.0
+    },
+    {
+      "date": "2022-07-01",
+      "transactions_mn": 6283.0
+    },
+    {
+      "date": "2022-08-01",
+      "transactions_mn": 6579.0
+    },
+    {
+      "date": "2022-09-01",
+      "transactions_mn": 6783.0
+    },
+    {
+      "date": "2022-10-01",
+      "transactions_mn": 7305.0
+    },
+    {
+      "date": "2022-11-01",
+      "transactions_mn": 7313.0
+    },
+    {
+      "date": "2022-12-01",
+      "transactions_mn": 7826.0
+    },
+    {
+      "date": "2023-01-01",
+      "transactions_mn": 8036.0
+    },
+    {
+      "date": "2023-02-01",
+      "transactions_mn": 7514.0
+    },
+    {
+      "date": "2023-03-01",
+      "transactions_mn": 8689.0
+    },
+    {
+      "date": "2023-04-01",
+      "transactions_mn": 8895.0
+    },
+    {
+      "date": "2023-05-01",
+      "transactions_mn": 9414.0
+    },
+    {
+      "date": "2023-06-01",
+      "transactions_mn": 9336.0
+    },
+    {
+      "date": "2023-07-01",
+      "transactions_mn": 9963.0
+    },
+    {
+      "date": "2023-08-01",
+      "transactions_mn": 10580.0
+    },
+    {
+      "date": "2023-09-01",
+      "transactions_mn": 10558.0
+    },
+    {
+      "date": "2023-10-01",
+      "transactions_mn": 11406.0
+    },
+    {
+      "date": "2023-11-01",
+      "transactions_mn": 11235.0
+    },
+    {
+      "date": "2023-12-01",
+      "transactions_mn": 12020.0
+    },
+    {
+      "date": "2024-01-01",
+      "transactions_mn": 12189.0
+    },
+    {
+      "date": "2024-02-01",
+      "transactions_mn": 12009.0
+    },
+    {
+      "date": "2024-03-01",
+      "transactions_mn": 13437.0
+    },
+    {
+      "date": "2024-04-01",
+      "transactions_mn": 13304.0
+    },
+    {
+      "date": "2024-05-01",
+      "transactions_mn": 14035.0
+    },
+    {
+      "date": "2024-06-01",
+      "transactions_mn": 13887.0
+    },
+    {
+      "date": "2024-07-01",
+      "transactions_mn": 14439.0
+    },
+    {
+      "date": "2024-08-01",
+      "transactions_mn": 14966.0
+    },
+    {
+      "date": "2024-09-01",
+      "transactions_mn": 15040.0
+    }
+  ],
+  "test_series": [
+    {
+      "date": "2024-10-01",
+      "transactions_mn": 16580.0
+    },
+    {
+      "date": "2024-11-01",
+      "transactions_mn": 15481.0
+    },
+    {
+      "date": "2024-12-01",
+      "transactions_mn": 16734.0
+    },
+    {
+      "date": "2025-01-01",
+      "transactions_mn": 16990.0
+    },
+    {
+      "date": "2025-02-01",
+      "transactions_mn": 16119.0
+    },
+    {
+      "date": "2025-03-01",
+      "transactions_mn": 18018.0
+    },
+    {
+      "date": "2025-04-01",
+      "transactions_mn": 17870.0
+    },
+    {
+      "date": "2025-05-01",
+      "transactions_mn": 18916.0
+    },
+    {
+      "date": "2025-06-01",
+      "transactions_mn": 18839.0
+    },
+    {
+      "date": "2025-07-01",
+      "transactions_mn": 19520.0
+    },
+    {
+      "date": "2025-08-01",
+      "transactions_mn": 19970.0
+    },
+    {
+      "date": "2025-09-01",
+      "transactions_mn": 20127.0
+    }
+  ],
+  "forecasts": {
+    "Seasonal Naive": [
+      {
+        "date": "2024-10-01",
+        "forecast": 11406.0,
+        "lower": 7305.0,
+        "upper": 15507.0
+      },
+      {
+        "date": "2024-11-01",
+        "forecast": 11235.0,
+        "lower": 7134.0,
+        "upper": 15336.0
+      },
+      {
+        "date": "2024-12-01",
+        "forecast": 12020.0,
+        "lower": 7826.0,
+        "upper": 16214.0
+      },
+      {
+        "date": "2025-01-01",
+        "forecast": 12189.0,
+        "lower": 7995.0,
+        "upper": 16383.0
+      },
+      {
+        "date": "2025-02-01",
+        "forecast": 12009.0,
+        "lower": 7514.0,
+        "upper": 16504.0
+      },
+      {
+        "date": "2025-03-01",
+        "forecast": 13437.0,
+        "lower": 8689.0,
+        "upper": 18185.0
+      },
+      {
+        "date": "2025-04-01",
+        "forecast": 13304.0,
+        "lower": 8556.0,
+        "upper": 18052.0
+      },
+      {
+        "date": "2025-05-01",
+        "forecast": 14035.0,
+        "lower": 9287.0,
+        "upper": 18783.0
+      },
+      {
+        "date": "2025-06-01",
+        "forecast": 13887.0,
+        "lower": 9139.0,
+        "upper": 18635.0
+      },
+      {
+        "date": "2025-07-01",
+        "forecast": 14439.0,
+        "lower": 9691.0,
+        "upper": 19187.0
+      },
+      {
+        "date": "2025-08-01",
+        "forecast": 14966.0,
+        "lower": 10218.0,
+        "upper": 19714.0
+      },
+      {
+        "date": "2025-09-01",
+        "forecast": 15040.0,
+        "lower": 10292.0,
+        "upper": 19788.0
+      }
+    ],
+    "ETS": [
+      {
+        "date": "2024-10-01",
+        "forecast": 16133.4452,
+        "lower": 15497.7702,
+        "upper": 16769.1203
+      },
+      {
+        "date": "2024-11-01",
+        "forecast": 15788.3407,
+        "lower": 15121.5139,
+        "upper": 16455.1675
+      },
+      {
+        "date": "2024-12-01",
+        "forecast": 16644.8127,
+        "lower": 15776.6297,
+        "upper": 17512.9956
+      },
+      {
+        "date": "2025-01-01",
+        "forecast": 16722.4366,
+        "lower": 15928.663,
+        "upper": 17516.2103
+      },
+      {
+        "date": "2025-02-01",
+        "forecast": 16022.63,
+        "lower": 14739.2977,
+        "upper": 17305.9623
+      },
+      {
+        "date": "2025-03-01",
+        "forecast": 17932.5133,
+        "lower": 16667.5791,
+        "upper": 19197.4474
+      },
+      {
+        "date": "2025-04-01",
+        "forecast": 17739.3887,
+        "lower": 16478.6688,
+        "upper": 19000.1086
+      },
+      {
+        "date": "2025-05-01",
+        "forecast": 18488.1434,
+        "lower": 17060.3511,
+        "upper": 19915.9358
+      },
+      {
+        "date": "2025-06-01",
+        "forecast": 18111.1885,
+        "lower": 16641.3017,
+        "upper": 19581.0753
+      },
+      {
+        "date": "2025-07-01",
+        "forecast": 18854.057,
+        "lower": 17532.2791,
+        "upper": 20175.835
+      },
+      {
+        "date": "2025-08-01",
+        "forecast": 19499.2918,
+        "lower": 17956.3417,
+        "upper": 21042.242
+      },
+      {
+        "date": "2025-09-01",
+        "forecast": 19409.9106,
+        "lower": 17763.7823,
+        "upper": 21056.0388
+      }
+    ],
+    "STL-ETS (Hybrid)": [
+      {
+        "date": "2024-10-01",
+        "forecast": 16237.1416,
+        "lower": 14943.4915,
+        "upper": 17530.7917
+      },
+      {
+        "date": "2024-11-01",
+        "forecast": 15963.5515,
+        "lower": 14571.1449,
+        "upper": 17355.958
+      },
+      {
+        "date": "2024-12-01",
+        "forecast": 17091.2935,
+        "lower": 15786.2684,
+        "upper": 18396.3186
+      },
+      {
+        "date": "2025-01-01",
+        "forecast": 17061.0021,
+        "lower": 15611.5322,
+        "upper": 18510.472
+      },
+      {
+        "date": "2025-02-01",
+        "forecast": 14839.3705,
+        "lower": 10519.1674,
+        "upper": 19159.5736
+      },
+      {
+        "date": "2025-03-01",
+        "forecast": 19256.399,
+        "lower": 17362.6056,
+        "upper": 21150.1923
+      },
+      {
+        "date": "2025-04-01",
+        "forecast": 19321.201,
+        "lower": 17277.1376,
+        "upper": 21365.2644
+      },
+      {
+        "date": "2025-05-01",
+        "forecast": 20583.7535,
+        "lower": 18235.207,
+        "upper": 22932.3
+      },
+      {
+        "date": "2025-06-01",
+        "forecast": 20305.4614,
+        "lower": 17603.6805,
+        "upper": 23007.2422
+      },
+      {
+        "date": "2025-07-01",
+        "forecast": 21330.4564,
+        "lower": 18506.1233,
+        "upper": 24154.7896
+      },
+      {
+        "date": "2025-08-01",
+        "forecast": 22362.911,
+        "lower": 19113.2614,
+        "upper": 25612.5606
+      },
+      {
+        "date": "2025-09-01",
+        "forecast": 22240.1414,
+        "lower": 19226.6829,
+        "upper": 25253.5999
+      }
+    ]
+  },
+  "backtest_summary": [
+    {
+      "Model": "Seasonal Naive",
+      "MAE": 2997.5,
+      "RMSE": 3313.8,
+      "sMAPE (%)": 54.56,
+      "MASE": 1.298,
+      "Coverage": "15.9%",
+      "Target": "90%",
+      "d.Coverage": "-74.1%",
+      "Mean Width": 4765.2,
+      "Winkler \u2193": 20270.0
+    },
+    {
+      "Model": "ETS",
+      "MAE": 340.4,
+      "RMSE": 441.0,
+      "sMAPE (%)": 6.82,
+      "MASE": 0.147,
+      "Coverage": "30.3%",
+      "Target": "90%",
+      "d.Coverage": "-59.7%",
+      "Mean Width": 359.9,
+      "Winkler \u2193": 4599.9
+    },
+    {
+      "Model": "STL-ETS (Hybrid)",
+      "MAE": 734.5,
+      "RMSE": 890.6,
+      "sMAPE (%)": 12.56,
+      "MASE": 0.318,
+      "Coverage": "13.6%",
+      "Target": "90%",
+      "d.Coverage": "-76.4%",
+      "Mean Width": 471.4,
+      "Winkler \u2193": 10948.4
+    }
+  ],
+  "coverage_check": {
+    "Seasonal Naive": {
+      "empirical_coverage": 0.25,
+      "target_coverage": 0.9,
+      "n_covered": 3,
+      "n_total": 12,
+      "calibrated": false
+    },
+    "ETS": {
+      "empirical_coverage": 1.0,
+      "target_coverage": 0.9,
+      "n_covered": 12,
+      "n_total": 12,
+      "calibrated": true
+    },
+    "STL-ETS (Hybrid)": {
+      "empirical_coverage": 1.0,
+      "target_coverage": 0.9,
+      "n_covered": 12,
+      "n_total": 12,
+      "calibrated": true
+    }
+  },
+  "conformal_widths": {
+    "Seasonal Naive": {
+      "1": 4101.0,
+      "2": 4101.0,
+      "3": 4194.0,
+      "4": 4194.0,
+      "5": 4495.0,
+      "6": 4748.0,
+      "7": 4748.0,
+      "8": 4748.0,
+      "9": 4748.0,
+      "10": 4748.0,
+      "11": 4748.0,
+      "12": 4748.0
+    },
+    "ETS": {
+      "1": 635.6750351499213,
+      "2": 666.8267833893824,
+      "3": 868.18296690651,
+      "4": 793.7736786095929,
+      "5": 1283.3322942938375,
+      "6": 1264.934175578761,
+      "7": 1260.7199215866422,
+      "8": 1427.792332260031,
+      "9": 1469.8867808870073,
+      "10": 1321.7779699560979,
+      "11": 1542.950141844156,
+      "12": 1646.128233196412
+    },
+    "STL-ETS (Hybrid)": {
+      "1": 1293.6501246571215,
+      "2": 1392.4065231062596,
+      "3": 1305.0250748477665,
+      "4": 1449.4698620398358,
+      "5": 4320.203085173841,
+      "6": 1893.7933609203956,
+      "7": 2044.0633864778683,
+      "8": 2348.546498550817,
+      "9": 2701.7808511261737,
+      "10": 2824.3331534778226,
+      "11": 3249.6495618304034,
+      "12": 3013.4585175124776
+    }
+  },
+  "latest_backtest_fold": [
+    {
+      "date": "2025-04-01",
+      "origin": "2025-04-01",
+      "horizon_step": 1,
+      "model": "Seasonal Naive",
+      "actual": 17870.0,
+      "forecast": 13304.0,
+      "lower": 10248.875,
+      "upper": 16359.125
+    },
+    {
+      "date": "2025-05-01",
+      "origin": "2025-04-01",
+      "horizon_step": 2,
+      "model": "Seasonal Naive",
+      "actual": 18916.0,
+      "forecast": 14035.0,
+      "lower": 9714.400790254898,
+      "upper": 18355.5992097451
+    },
+    {
+      "date": "2025-06-01",
+      "origin": "2025-04-01",
+      "horizon_step": 3,
+      "model": "Seasonal Naive",
+      "actual": 18839.0,
+      "forecast": 13887.0,
+      "lower": 8595.368276526133,
+      "upper": 19178.631723473867
+    },
+    {
+      "date": "2025-07-01",
+      "origin": "2025-04-01",
+      "horizon_step": 4,
+      "model": "Seasonal Naive",
+      "actual": 19520.0,
+      "forecast": 14439.0,
+      "lower": 8328.75,
+      "upper": 20549.25
+    },
+    {
+      "date": "2025-08-01",
+      "origin": "2025-04-01",
+      "horizon_step": 5,
+      "model": "Seasonal Naive",
+      "actual": 19970.0,
+      "forecast": 14966.0,
+      "lower": 8134.532820240955,
+      "upper": 21797.467179759045
+    },
+    {
+      "date": "2025-09-01",
+      "origin": "2025-04-01",
+      "horizon_step": 6,
+      "model": "Seasonal Naive",
+      "actual": 20127.0,
+      "forecast": 15040.0,
+      "lower": 7556.502649579544,
+      "upper": 22523.497350420457
+    },
+    {
+      "date": "2025-04-01",
+      "origin": "2025-04-01",
+      "horizon_step": 1,
+      "model": "ETS",
+      "actual": 17870.0,
+      "forecast": 17865.16865002119,
+      "lower": 17520.385328171866,
+      "upper": 18209.951971870516
+    },
+    {
+      "date": "2025-05-01",
+      "origin": "2025-04-01",
+      "horizon_step": 2,
+      "model": "ETS",
+      "actual": 18916.0,
+      "forecast": 18623.737815792134,
+      "lower": 18136.140565952774,
+      "upper": 19111.335065631494
+    },
+    {
+      "date": "2025-06-01",
+      "origin": "2025-04-01",
+      "horizon_step": 3,
+      "model": "ETS",
+      "actual": 18839.0,
+      "forecast": 18242.895853178037,
+      "lower": 17645.713622132636,
+      "upper": 18840.078084223438
+    },
+    {
+      "date": "2025-07-01",
+      "origin": "2025-04-01",
+      "horizon_step": 4,
+      "model": "ETS",
+      "actual": 19520.0,
+      "forecast": 18989.903821682237,
+      "lower": 18300.33717798359,
+      "upper": 19679.470465380884
+    },
+    {
+      "date": "2025-08-01",
+      "origin": "2025-04-01",
+      "horizon_step": 5,
+      "model": "ETS",
+      "actual": 19970.0,
+      "forecast": 19640.093967093588,
+      "lower": 18869.13502193031,
+      "upper": 20411.052912256866
+    },
+    {
+      "date": "2025-09-01",
+      "origin": "2025-04-01",
+      "horizon_step": 6,
+      "model": "ETS",
+      "actual": 20127.0,
+      "forecast": 19548.710303063413,
+      "lower": 18704.167092710784,
+      "upper": 20393.253513416043
+    },
+    {
+      "date": "2025-04-01",
+      "origin": "2025-04-01",
+      "horizon_step": 1,
+      "model": "STL-ETS (Hybrid)",
+      "actual": 17870.0,
+      "forecast": 18783.20782142001,
+      "lower": 18571.682005567905,
+      "upper": 18994.73363727211
+    },
+    {
+      "date": "2025-05-01",
+      "origin": "2025-04-01",
+      "horizon_step": 2,
+      "model": "STL-ETS (Hybrid)",
+      "actual": 18916.0,
+      "forecast": 19959.61217635937,
+      "lower": 19660.46949878929,
+      "upper": 20258.754853929448
+    },
+    {
+      "date": "2025-06-01",
+      "origin": "2025-04-01",
+      "horizon_step": 3,
+      "model": "STL-ETS (Hybrid)",
+      "actual": 18839.0,
+      "forecast": 19680.1174708435,
+      "lower": 19313.7440106752,
+      "upper": 20046.4909310118
+    },
+    {
+      "date": "2025-07-01",
+      "origin": "2025-04-01",
+      "horizon_step": 4,
+      "model": "STL-ETS (Hybrid)",
+      "actual": 19520.0,
+      "forecast": 20647.05903632324,
+      "lower": 20224.007404619035,
+      "upper": 21070.110668027446
+    },
+    {
+      "date": "2025-08-01",
+      "origin": "2025-04-01",
+      "horizon_step": 5,
+      "model": "STL-ETS (Hybrid)",
+      "actual": 19970.0,
+      "forecast": 21628.91221607597,
+      "lower": 21155.926112834564,
+      "upper": 22101.898319317374
+    },
+    {
+      "date": "2025-09-01",
+      "origin": "2025-04-01",
+      "horizon_step": 6,
+      "model": "STL-ETS (Hybrid)",
+      "actual": 20127.0,
+      "forecast": 21454.85044925461,
+      "lower": 20936.72013299104,
+      "upper": 21972.98076551818
+    }
+  ]
+}

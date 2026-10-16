@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForeDemand – Calibrated UPI Transaction Forecasting</title>
+  <meta name="description" content="Calibrated demand forecasting of India's UPI transaction volumes with conformal prediction intervals and rigorous backtesting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ── Loader ── -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <p>Computing forecasts…</p>
+    </div>
+  </div>
+
+  <!-- ── Nav ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="brand-icon">📈</span>
+        <span class="brand-name">ForeDemand</span>
+        <span class="brand-tag">UPI · Conformal</span>
+      </div>
+      <div class="nav-links">
+        <a href="#overview" class="nav-link active" data-section="overview">Overview</a>
+        <a href="#forecast" class="nav-link" data-section="forecast">Forecast</a>
+        <a href="#backtest" class="nav-link" data-section="backtest">Backtest</a>
+        <a href="#coverage" class="nav-link" data-section="coverage">Coverage</a>
+        <a href="#methodology" class="nav-link" data-section="methodology">Method</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <header id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Live Conformal Prediction
+      </div>
+      <h1 class="hero-title">
+        Calibrated Demand<br />
+        <span class="gradient-text">Forecasting</span>
+      </h1>
+      <p class="hero-subtitle">
+        India's monthly UPI transaction volumes · 90% prediction intervals ·
+        Backtested against seasonal benchmarks
+      </p>
+      <div class="hero-stats" id="hero-stats">
+        <!-- populated by JS -->
+      </div>
+      <div class="hero-cta">
+        <a href="#forecast" class="btn-primary">Explore Forecast</a>
+        <a href="#backtest" class="btn-ghost">View Backtest</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── Section 1: Overview ── -->
+    <section id="overview" class="section">
+      <div class="section-header">
+        <div class="section-badge">Historical</div>
+        <h2>UPI Transaction Growth</h2>
+        <p>Monthly volumes from NPCI — from zero to 20 billion transactions</p>
+      </div>
+      <div class="chart-card" id="chart-historical"></div>
+      <div class="kpi-row" id="kpi-row"></div>
+    </section>
+
+    <!-- ── Section 2: Forecast ── -->
+    <section id="forecast" class="section">
+      <div class="section-header">
+        <div class="section-badge">Forecast</div>
+        <h2>12-Month Ahead Prediction</h2>
+        <p>Conformal 90% intervals guaranteed by calibration, not assumptions</p>
+      </div>
+
+      <div class="controls-bar">
+        <div class="control-group" id="model-selector">
+          <span class="control-label">Model</span>
+          <button class="ctrl-btn active" data-model="STL-ETS (Hybrid)" id="btn-hybrid">STL-ETS Hybrid</button>
+          <button class="ctrl-btn" data-model="ETS" id="btn-ets">ETS</button>
+          <button class="ctrl-btn" data-model="Seasonal Naive" id="btn-naive">Seasonal Naive</button>
+        </div>
+        <div class="control-group">
+          <span class="control-label">Interval</span>
+          <span class="ctrl-badge">90% Conformal</span>
+        </div>
+      </div>
+
+      <div class="chart-card" id="chart-forecast"></div>
+
+      <div class="interval-explainer">
+        <div class="explainer-icon">🎯</div>
+        <div class="explainer-body">
+          <strong>What are conformal intervals?</strong>
+          Unlike Gaussian ±1.64σ bands, conformal intervals are <em>distribution-free</em>.
+          They are calibrated on held-out residuals so the empirical coverage matches the
+          stated level (~90%) regardless of the model's error distribution.
+        </div>
+      </div>
+
+      <div class="forecast-table-wrap">
+        <h3>Forecast Table</h3>
+        <table class="data-table" id="forecast-table">
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Forecast (Mn)</th>
+              <th>Lower (90%)</th>
+              <th>Upper (90%)</th>
+              <th>Width</th>
+            </tr>
+          </thead>
+          <tbody id="forecast-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ── Section 3: Backtest ── -->
+    <section id="backtest" class="section">
+      <div class="section-header">
+        <div class="section-badge">Backtest</div>
+        <h2>Rolling-Origin Performance</h2>
+        <p>Expanding-window evaluation — each origin trains on all prior data</p>
+      </div>
+
+      <div class="table-card">
+        <table class="data-table" id="backtest-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>MAE</th>
+              <th>RMSE</th>
+              <th>sMAPE (%)</th>
+              <th>MASE</th>
+              <th>Coverage</th>
+              <th>Target</th>
+              <th>Δ Coverage</th>
+              <th>Mean Width</th>
+              <th>Winkler ↓</th>
+            </tr>
+          </thead>
+          <tbody id="backtest-tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="chart-card" id="chart-backtest-error"></div>
+    </section>
+
+    <!-- ── Section 4: Coverage Check ── -->
+    <section id="coverage" class="section">
+      <div class="section-header">
+        <div class="section-badge">Coverage</div>
+        <h2>Calibration Check</h2>
+        <p>The key measurable result — do 90% intervals contain ≈90% of outcomes?</p>
+      </div>
+
+      <div class="coverage-grid" id="coverage-grid"></div>
+      <div class="chart-card" id="chart-coverage"></div>
+
+      <div class="coverage-explainer">
+        <div class="explainer-cols">
+          <div class="exp-col">
+            <div class="exp-icon">✅</div>
+            <h4>Calibrated</h4>
+            <p>Empirical coverage within ±15pp of 90% target. Safe for planning.</p>
+          </div>
+          <div class="exp-col">
+            <div class="exp-icon">⚠️</div>
+            <h4>Overconfident</h4>
+            <p>Coverage well below 90% — intervals too narrow. More uncertainty than claimed.</p>
+          </div>
+          <div class="exp-col">
+            <div class="exp-icon">📏</div>
+            <h4>Conservative</h4>
+            <p>Coverage exceeds 90% — intervals too wide. Useful but less informative.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 5: Methodology ── -->
+    <section id="methodology" class="section">
+      <div class="section-header">
+        <div class="section-badge">Method</div>
+        <h2>How It Works</h2>
+        <p>Split-conformal prediction adapted for time series</p>
+      </div>
+
+      <div class="method-steps">
+        <div class="method-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Data</h3>
+            <p>Monthly NPCI UPI transaction data from Jan 2017 → Sep 2025 (104 observations). Log-transformed for variance stabilisation where needed.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Models</h3>
+            <p><strong>Seasonal Naive</strong> — carry forward the same month last year.<br/>
+               <strong>ETS</strong> — Holt-Winters multiplicative seasonality.<br/>
+               <strong>STL-ETS Hybrid</strong> — STL decomposition on log scale, ETS on seasonally-adjusted series.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Conformal Calibration</h3>
+            <p>The training set is split: 75% fit, 25% calibrate. For each horizon h, we collect absolute residuals from rolling re-fits and take the <strong>⌈(n+1)·0.90⌉-th smallest</strong> as the conformal width q̂ₕ.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Interval Construction</h3>
+            <p>For a new forecast ŷ_{t+h}: interval = [ŷ_{t+h} − q̂ₕ, ŷ_{t+h} + q̂ₕ]. No distributional assumption. Guaranteed marginal coverage by the conformal guarantee.</p>
+          </div>
+        </div>
+        <div class="method-step">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h3>Backtest & Coverage</h3>
+            <p>Rolling-origin evaluation with 3-month step. Coverage = fraction of test outcomes falling inside the interval. Target: ≥ 90%. Winkler score rewards narrow + accurate intervals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="metrics-glossary">
+        <h3>Metric Glossary</h3>
+        <div class="glossary-grid">
+          <div class="gloss-item"><span class="gloss-term">MAE</span><span>Mean Absolute Error (Mn transactions)</span></div>
+          <div class="gloss-item"><span class="gloss-term">RMSE</span><span>Root Mean Squared Error</span></div>
+          <div class="gloss-item"><span class="gloss-term">sMAPE</span><span>Symmetric Mean Absolute % Error</span></div>
+          <div class="gloss-item"><span class="gloss-term">MASE</span><span>MAE scaled by Seasonal Naive MAE (< 1 = beats baseline)</span></div>
+          <div class="gloss-item"><span class="gloss-term">Coverage</span><span>% of actuals inside the 90% PI</span></div>
+          <div class="gloss-item"><span class="gloss-term">Winkler</span><span>Interval loss: penalises width + misses (lower = better)</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">📈</span> ForeDemand
+      </div>
+      <p class="footer-copy">
+        Data: NPCI UPI Statistics · Built with Conformal Prediction + Statsmodels
+      </p>
+      <p class="footer-copy small" id="footer-generated"></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
